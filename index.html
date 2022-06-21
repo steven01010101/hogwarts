@@ -1,0 +1,307 @@
+
+<!-- Los comentarios a lo largo del codigo son muy importantes nos ayudan  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>hogwarts</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons --> 
+
+
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>usuario </b></h1>
+    <h6>Bienvenidos a <span class="w3-tag">hogwarts</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="img/bannerpotter.webp" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white"></h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>ACADEMIA HOGWARTS</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">INCRESAR</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3> LA ACADEMIA HOGWARTS Y LA HECHICERIA</h3>
+          <h5> 
+              <span class="w3-opacity">love of wizardry</span>
+          </h5>
+        </div>
+
+        <div class="w3-justify">
+          <img  src="/img/academia.webp" alt="academia Hat" style="width:100%" class="w3-padding-16">
+          <p><strong> El Colegio Hogwarts</strong> es una escuela de magia perteneciente al universo de Harry Potter.
+
+            Hogwarts es una escuela a la cual asisten jóvenes magos para desarrollar sus habilidades mágicas. El edificio, situado en las colinas de Escocia, es visto como un antiguo edificio en ruinas con un cartel que dice "cuidado, ruinas peligrosas", por las personas ajenas a poderes mágicos (más comúnmente conocidos como muggles). Tiene siete plantas, varias torres, escaleras que cambian de posición a su antojo y extensos terrenos que contienen un lago, un bosque, llamado El Bosque Prohibido, y varios invernaderos con fines botánicos. Además de sus numerosas aulas en las que se imparten las clases de pociones, transformaciones, Defensa contra las Artes Oscuras, Historia de la magia y demás asignaturas por asistentes calificados, el castillo posee lugares con fines diferentes. Ejemplos son el Gran Comedor (donde se celebran enormes banquetes en días especiales y que posee un techo mágico el cual parece ser el cielo y presenta el tiempo atmosférico del momento), las salas comunes, una gran biblioteca, la misteriosa Sala de los Menesteres o la legendaria Cámara Secreta, donde el famoso mago Harry Potter derrotó al mago tenebroso lord Voldemort por segunda vez y mató un basilisco usando la espada de Gryffindor, estando apenas en segundo año. Muchos pasajes ocultos, escaleras y retratos de pinturas en movimiento con vida propia, hacen que el recorrido por el castillo sea preocupante para los estudiantes más confusos, y emocionante para los más curiosos.
+
+            
+            
+            </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/morgan.jpg" style="width:80px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Morgan <span class="w3-opacity w3-medium">juneo 15, 2022, 1:32 PM</span></h4>
+                <p>Me gustaria estudiar en hogwarts </p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>ESTUDIANTE ESTRELLA O REVELACION  DE LA ACADEMIA HOGWARTS</h3>
+          <h5> <span class="w3-opacity">Harry Potter</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/harryhead.webp" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p><strong>Harry Potter</strong>!</p>
+          <p>Harry había sido siempre pequeño y muy flaco para su edad. Incluso parecía más pequeño y enjuto de lo que realmente era, porque toda la ropa que usaba eran prendas viejas de Dudley, y su primo era cuatro veces más grande que él. Harry tenía un rostro delgado, rodillas huesudas, pelo negro y ojos verdes brillantes. Usaba anteojos redondos siempre pegados con cinta adhesiva, por todas las veces que Dudley lo había golpeado en la nariz. Lo único que a Harry le gustaba sobre su apariencia era esa pequeña cicatriz en la frente, con la forma de un rayo."
+           su aprendizaje a sido excelente en el ambito de la hechiceria demostrando unos dotes increibles en el manejo de la cual a sido capaz de utilizar en defenza como ataque contra los mortifagos </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/pamhead.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>mely<span class="w3-opacity w3-medium"> juneo 10, 2022, 3:52 PM</span></h4>
+                <p>me parece interesante el estudiante harry Potter , con sus logros y dotes que a dado en hogwarts.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/wonka.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>wonka <span class="w3-opacity w3-medium">juneo  11, 2022, 10:32 PM</span></h4>
+                <p>la historia es fantastica pero como que algo no me cuadra.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/draco.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>malfoy <span class="w3-opacity w3-medium">juneo 13, 2022, 10:12 AM</span></h4>
+                <p>potter nunca va a ser el mejor de hogwarts </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="img/pricionero.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>SE BUSCA</h4>
+          <p>Sirius fue arrestado por el Departamento de Aplicación de la Ley Mágica y fue condenado sin juicio a Azkaban por el asesinato de Pettigrew y las víctimas de la explosión, por revelar información sobre el paradero de los Potter que condujo a su muerte y por estar al servicio de Lord Voldemort.</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Post mas gracioosos</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="img/fotocambezon.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">kakashi</span>
+            <br>
+            <span>no entiendo quien es voldemor, acaso eso se come?</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/muneco.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">carlos</span>
+            <br>
+            <span> quiero entrar a hogwarts</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/miky.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">raton</span>
+            <br>
+            <span>por que nadie me cree que soy hechicero</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/monalesa.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">lisa</span>
+            <br>
+            <span>ni ayudandolo harry toma buenas decisiones </span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+     
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">magia</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">potter</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">castillos</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">varitas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">malos</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">draco malfoy</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Metodologia</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">anormal</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">vuelo</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Misterio</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Paranormal</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">escuela</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Magia</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">creaturas fantasticas</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Inspiration</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="img/academia.webp" alt="Jeans" style="width:100%"></p>
+            <p><img src="img/draco.jpg" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="img/banderas.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="img/aniversario.jpeg" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Sigueme</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribete</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Ingresa tu emeil para recibir mas noticias sobre esta maravillosa academia.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>recibiras nuevas notificaciones cada semana sobre hogwarts y como ser un hechicero.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container " style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
